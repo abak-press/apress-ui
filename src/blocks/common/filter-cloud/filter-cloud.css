@@ -1,0 +1,30 @@
+.aui-filter-cloud {
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+  background: #feffdf;
+  border: 1px solid #ffcd50;
+  box-sizing: border-box;
+  border-radius: 4px;
+  color: #ba8c4a;
+  font-size: 12px;
+  padding: 3px 15px;
+  cursor: pointer;
+  font-family: OpenSans, sans-serif;
+}
+
+.aui-filter-cloud:hover {
+  background: #ffd2d2;
+  border: 1px solid #dc6263;
+  color: #c44446;
+}
+
+.aui-filter-cloud .aui-filter-icon {
+  display: inline-flex;
+  margin-left: 8px;
+  fill: #ba8c4a;
+}
+
+.aui-filter-cloud:hover .aui-filter-icon {
+  fill: #c44446;
+}
