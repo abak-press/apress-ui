@@ -1,0 +1,20 @@
+.aui-button_one-click {
+  background: transparent;
+  border: 1px solid var(--blue);
+  font-size: 12px;
+  line-height: 24px;
+  color: var(--blue);
+  padding: 6px 18px;
+}
+
+.aui-button_one-click:active {
+  background: var(--dark-blue);
+  color: var(--white);
+}
+
+@media (hover: hover) {
+  .aui-button_one-click:hover {
+    background: var(--dark-blue);
+    color: var(--white);
+  }
+}
