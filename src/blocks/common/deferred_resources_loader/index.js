@@ -1,0 +1,1 @@
+import './deferred_resources_loader.js';
