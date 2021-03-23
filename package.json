@@ -5,16 +5,19 @@
     "dev": "NPM_SCRIPT=dev ./scripts/npm-script.sh",
     "build": "NPM_SCRIPT=build ./scripts/npm-script.sh",
     "provision": "NPM_SCRIPT=provision ./scripts/npm-script.sh",
-    "release": "./scripts/release.sh"
+    "release": "./scripts/release.sh",
+    "test": "jest"
   },
   "author": "idbolshakov@gmail.com",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "v-click-outside": "^3.1.2"
+  },
   "devDependencies": {
     "@apress/handlebars-helpers": "^1.0.2",
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.2.2",
-    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-env": "^7.13.10",
     "@storybook/addon-actions": "^4.1.6",
     "@storybook/addon-notes": "^4.1.6",
     "@storybook/addon-options": "^4.1.13",
@@ -24,8 +27,11 @@
     "chokidar": "^2.1.2",
     "css-loader": "^2.1.0",
     "file-loader": "^3.0.1",
+    "jest": "^26.6.3",
     "mini-css-extract-plugin": "^0.5.0",
     "rimraf": "^2.6.3",
+    "vue-loader": "^15.9.2",
+    "vue-template-compiler": "^2.6.11",
     "webpack": "^4.28.4",
     "webpack-cli": "^3.2.1"
   },

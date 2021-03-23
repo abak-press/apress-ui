@@ -1,0 +1,23 @@
+<h3>Vue-компонент селект с фильтром</h3>
+
+<p><b>Подключение:</b></p>
+<code>
+  import filterableSelect from '@apress/apress-ui/dist/common/filterable-select.js';<br>
+  import '@apress/apress-ui/dist/common/filterable-select.css';
+</code>
+
+<p><b>Использование:</b></p>
+<code>
+  &lt;filterable-select<br>
+  &nbsp;&nbsp;:options="options"<br>
+  &nbsp;&nbsp;:optionId="optionId"<br>
+  &nbsp;&nbsp;v-on:change="handleChange"<br>
+  &gt;&lt;/filterable-select&gt;
+</code>
+
+<p><b>Параметры:</b></p>
+<p>
+  options - [Object{id: Number, value: String, selected: Bool, disabled: Bool}]<br>
+  optionId - Number<br>
+  handleChange - Function(Object) (option item)
+</p>

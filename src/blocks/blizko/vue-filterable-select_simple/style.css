@@ -1,0 +1,88 @@
+.filterable-select_simple {
+  height: 25px;
+}
+
+.filterable-select_simple .filterable-select__search-input {
+  width: calc(100% - 60px);
+}
+
+.filterable-select_simple .filterable-select__search-input,
+.filterable-select_simple .filterable-select__current-value {
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.filterable-select_simple .filterable-select__search-block,
+.filterable-select_simple .filterable-select__current-value {
+  border: 1px solid var(--black-l75);
+}
+
+.filterable-select_simple .filterable-select__options-block {
+  border: 1px solid var(--black-l75);
+  top: 24px;
+  padding: 5px 10px;
+  max-height: 160px;
+  overflow-y: auto;
+}
+
+.filterable-select_simple .filterable-select__options-block_empty {
+  font-size: 12px;
+  line-height: 14px;
+  color: var(--black-l65);
+}
+
+.filterable-select_simple .filterable-select__options-list {
+  padding: 5px;
+}
+
+.filterable-select_simple .filterable-select__option-item {
+  font-size: 12px;
+  line-height: 14px;
+  margin: 3px 0px;
+}
+
+.filterable-select_simple .filterable-select__option-item_selected {
+  color: var(--black);
+}
+
+.filterable-select_simple .filterable-select__option-item_disabled {
+  color: var(--black-l65);
+}
+
+.filterable-select_simple .filterable-select__close-button {
+  border: none;
+}
+
+.filterable-select_simple .filterable-select__close-button::before {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 7.5px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--black-l50);
+  mask-image: url(~images/triangle.svg);
+  mask-repeat: no-repeat;
+  mask-size: contain;
+}
+
+.filterable-select_simple .filterable-select__clear-button {
+  border: none;
+  padding: 0;
+  width: 12px;
+}
+
+.filterable-select_simple .filterable-select__clear-button::before {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--black-l50);
+  mask-image: url(~images/thin_cross.svg);
+  mask-repeat: no-repeat;
+  mask-size: contain;
+}

@@ -1,0 +1,93 @@
+.filterable-select_smooth {
+  height: 36px;
+}
+
+.filterable-select_smooth .filterable-select__current-value,
+.filterable-select_smooth .filterable-select__search-block {
+  border-color: var(--black-l85);
+  border-radius: 4px;
+  color: var(--black-l22);
+}
+
+.filterable-select_smooth .filterable-select__search-input {
+  border-radius: 4px;
+  font-size: 14px;
+  color: var(--black-l22);
+  background: transparent;
+  width: calc(100% - 60px);
+}
+
+.filterable-select_smooth .filterable-select__current-value {
+  font-size: 14px;
+  line-height: 36px;
+}
+
+.filterable-select_smooth .filterable-select__options-block {
+  top: 36px;
+  width: 220px;
+  max-height: 320px;
+  padding: 20px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 3px 8px rgb(0 0 0 / 25%);
+  overflow-y: auto;
+}
+
+.filterable-select_smooth .filterable-select__close-button {
+  width: 9px;
+  margin: 0 14px 0 9px;
+  padding: 0;
+  border: none;
+}
+
+.filterable-select_smooth .filterable-select__close-button::before {
+  content: '';
+  position: absolute;
+  width: 9px;
+  height: 5px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--black-l22);
+  mask-image: url(~images/arrow.svg);
+  mask-repeat: no-repeat;
+  mask-size: contain;
+}
+
+.filterable-select_smooth .filterable-select__clear-button {
+  border: none;
+  padding: 0;
+  width: 8px;
+  border: none;
+  right: 30px;
+}
+
+.filterable-select_smooth .filterable-select__clear-button::before {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--black-l75);
+  mask-image: url(~images/thin_cross.svg);
+  mask-repeat: no-repeat;
+  mask-size: contain;
+}
+
+.filterable-select_smooth.filterable-select_open .filterable-select__close-button::before {
+  transform: rotate(180deg) translate(4px, 2px);
+}
+
+.filterable-select_smooth .filterable-select__option-item {
+  font-size: 14px;
+}
+
+.filterable-select_smooth .filterable-select__option-item:not(:last-child) {
+  margin-bottom: 14px;
+}
+
+.filterable-select_smooth .filterable-select__option-item_selected {
+  color: var(--black);
+}
