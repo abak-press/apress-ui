@@ -31,11 +31,14 @@ window.IStorage = window.IStorage || (function() {
 
     if (!_iframeEl) {
       _iframeEl = _createIframe();
-      document.body.append(_iframeEl);
+      document.body.appendChild(_iframeEl);
 
       _iframeEl.onload = function() {
         _iframeEl.dataset.isLoaded = true;
-        _sendMessageFns.forEach(function(fun) { fun(); });
+
+        for (var i = 0; i < _sendMessageFns.length; i++) {
+          _sendMessageFns[i]();
+        }
       };
     }
   }
@@ -65,13 +68,15 @@ window.IStorage = window.IStorage || (function() {
   }
 
   function _callEventListeners(eventName, data) {
-    _listeners[eventName] && _listeners[eventName].forEach(function(listener) {
-      listener(data);
-    });
+    if (!_listeners[eventName]) { return; }
+
+    for (var i = 0; i < _listeners[eventName].length; i++) {
+      _listeners[eventName][i](data);
+    }
   }
 
   function _processPostMessage(sourceWindow, data) {
-    const payload = data.payload;
+    var payload = data.payload;
 
     switch(data.type) {
       case ACTION_TYPES.getRequest:
@@ -137,7 +142,7 @@ window.IStorage = window.IStorage || (function() {
   }
 
   function _parseJSON(data) {
-    let parsedData;
+    var parsedData;
 
     try { parsedData = JSON.parse(data); }
     catch(error) { return; }
@@ -146,7 +151,7 @@ window.IStorage = window.IStorage || (function() {
   }
 
   function _onMessage(event) {
-    const parsedData = _parseJSON(event.data);
+    var parsedData = _parseJSON(event.data);
 
     parsedData && _processPostMessage(event.source, parsedData);
   }
@@ -154,7 +159,7 @@ window.IStorage = window.IStorage || (function() {
   function _onStorage(event) {
     if (!event.newValue) { return; }
 
-    const parsedNewValue = _parseJSON(event.newValue);
+    var parsedNewValue = _parseJSON(event.newValue);
 
     _postMessage(
       window.parent,
