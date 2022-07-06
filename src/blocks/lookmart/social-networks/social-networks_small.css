@@ -7,3 +7,7 @@
   height: 28px;
   margin-left: 8px;
 }
+
+.social-networks_small .social-networks__item_mail {
+  display: none;
+}
