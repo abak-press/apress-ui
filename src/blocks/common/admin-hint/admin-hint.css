@@ -20,7 +20,7 @@
   font-weight: normal;
   opacity: 0;
   pointer-events: none;
-  z-index: 1;
+  z-index: var(--z-index-absolute);
 }
 @media (hover: hover) {
   .aui-admin-hint:hover {
