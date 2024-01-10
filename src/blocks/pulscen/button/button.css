@@ -6,6 +6,7 @@
   height: 36px;
   line-height: 36px;
   padding: 0 var(--indent-m);
+  white-space: nowrap;
   box-sizing: border-box;
 }
 
