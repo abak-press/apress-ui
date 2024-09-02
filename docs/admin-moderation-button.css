@@ -3,8 +3,16 @@
   height: 40px;
   background-color: var(--admin-white);
   border: 0;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 
+.aui-admin-moderation-button_save {
+  background-image: url(6c0bcbe52d6e90a0491106e8fd7fb9b6.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #028dd8;
+}
 .aui-admin-moderation-button_accept {
   background-image: url(2dc608ee6c71f77ef6ccd7acccac6c43.svg);
   background-position: center;
