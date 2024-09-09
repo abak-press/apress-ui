@@ -31,7 +31,27 @@
   background: var(--red-main);
 }
 
+.aui-button-desktop_color_red-main:hover {
+  background: var(--red-d101);
+  text-decoration: none;
+  color: var(--white);
+}
+
 .aui-button-desktop_clear-color_red-main {
   border-color: var(--red-main);
   color: var(--red-main);
+}
+
+.aui-button-desktop_clear-color_red-main::before {
+  background-color: var(--red-main);
+}
+
+.aui-button-desktop_clear-color_red-main:hover {
+  border-color: var(--red-d101);
+  text-decoration: none;
+  color: var(--red-d101);
+}
+
+.aui-button-desktop_clear-color_red-main:hover::before {
+  background-color: var(--red-d101);
 }

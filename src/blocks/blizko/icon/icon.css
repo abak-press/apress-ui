@@ -143,6 +143,11 @@
   background-color: var(--red-d101);
 }
 
+.aui-icon_phone-fill_red-main::before,
+.aui-icon_phone-fill_red-main::after {
+  background-color: var(--red-main);
+}
+
 .aui-icon_phone-fill_white::before,
 .aui-icon_phone-fill_white::after {
   background-color: var(--white);
