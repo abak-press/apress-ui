@@ -29,26 +29,26 @@ a.aui-button_color_clear-blue:hover {
 }
 
 .aui-button_color_orange {
-  background: var(--orange-l10);
+  background: var(--red-d101);
 }
 .aui-button_color_orange:hover {
-  background: var(--orange);
+  background: var(--red-main);
 }
 
 .aui-button_color_orange-original {
-  background: var(--orange);
+  background: var(--red-main);
 }
 .aui-button_color_orange-original:hover {
-  background: var(--orange-l10);
+  background: var(--red-d101);
 }
 
 .aui-button_color_clear-orange-original {
-  border-color: var(--orange);
-  color: var(--orange);
+  border-color: var(--red-main);
+  color: var(--red-main);
 }
 .aui-button_color_clear-orange-original:hover {
-  border-color: var(--orange-l10);
-  color: var(--orange-l10);
+  border-color: var(--red-d101);
+  color: var(--red-d101);
   background: var(--white);
 }
 
@@ -60,16 +60,16 @@ a.aui-button_color_orange:hover {
 }
 
 .aui-button_color_clear-orange {
-  border-color: var(--orange-l10);
-  color: var(--orange-l10);
+  border-color: var(--red-d101);
+  color: var(--red-d101);
 }
 .aui-button_color_clear-orange:hover {
-  background: var(--orange-l10);
+  background: var(--red-d101);
   color: var(--white);
 }
 
 a.aui-button_color_clear-orange {
-  color: var(--orange-l10);
+  color: var(--red-d101);
 }
 a.aui-button_color_clear-orange:hover {
   color: var(--white);
