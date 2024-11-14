@@ -1,7 +1,6 @@
 .aui-button_color_blue {
   background: var(--blue-l10);
 }
-
 .aui-button_color_blue:hover {
   background: var(--blue);
 }
@@ -9,7 +8,6 @@
 a.aui-button_color_blue {
   color: var(--white);
 }
-
 a.aui-button_color_blue:hover {
   color: var(--white);
 }
@@ -18,7 +16,6 @@ a.aui-button_color_blue:hover {
   border-color: var(--blue-l10);
   color: var(--blue-l10);
 }
-
 .aui-button_color_clear-blue:hover {
   background: var(--blue-l10);
   color: var(--white);
@@ -27,7 +24,6 @@ a.aui-button_color_blue:hover {
 a.aui-button_color_clear-blue {
   color: var(--blue-l10);
 }
-
 a.aui-button_color_clear-blue:hover {
   color: var(--white);
 }
@@ -35,7 +31,6 @@ a.aui-button_color_clear-blue:hover {
 .aui-button_color_orange {
   background: var(--red-d101);
 }
-
 .aui-button_color_orange:hover {
   background: var(--red-main);
 }
@@ -43,7 +38,6 @@ a.aui-button_color_clear-blue:hover {
 .aui-button_color_orange-original {
   background: var(--red-main);
 }
-
 .aui-button_color_orange-original:hover {
   background: var(--red-d101);
 }
@@ -52,7 +46,6 @@ a.aui-button_color_clear-blue:hover {
   border-color: var(--red-main);
   color: var(--red-main);
 }
-
 .aui-button_color_clear-orange-original:hover {
   border-color: var(--red-d101);
   color: var(--red-d101);
@@ -62,7 +55,6 @@ a.aui-button_color_clear-blue:hover {
 a.aui-button_color_orange {
   color: var(--white);
 }
-
 a.aui-button_color_orange:hover {
   color: var(--white);
 }
@@ -71,7 +63,6 @@ a.aui-button_color_orange:hover {
   border-color: var(--red-d101);
   color: var(--red-d101);
 }
-
 .aui-button_color_clear-orange:hover {
   background: var(--red-d101);
   color: var(--white);
@@ -80,7 +71,6 @@ a.aui-button_color_orange:hover {
 a.aui-button_color_clear-orange {
   color: var(--red-d101);
 }
-
 a.aui-button_color_clear-orange:hover {
   color: var(--white);
 }
@@ -88,7 +78,6 @@ a.aui-button_color_clear-orange:hover {
 .aui-button_color_blue-original {
   background: var(--blue);
 }
-
 .aui-button_color_blue-original:hover {
   background: var(--blue-d10);
 }
@@ -96,7 +85,6 @@ a.aui-button_color_clear-orange:hover {
 a.aui-button_color_blue-original {
   color: var(--white);
 }
-
 a.aui-button_color_blue-original:hover {
   color: var(--white);
 }
@@ -105,7 +93,6 @@ a.aui-button_color_blue-original:hover {
   border-color: var(--blue);
   color: var(--blue);
 }
-
 .aui-button_color_clear-blue-original:hover {
   background: var(--blue);
   color: var(--white);
