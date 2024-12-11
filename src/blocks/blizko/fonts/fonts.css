@@ -1,6 +1,6 @@
 :root {
   --default-font-size: 16px;
-  --default-font-family: Arial, sans-serif;
+  --default-font-family: 'Inter', sans-serif;
 
   --h1-maximum: normal calc(2 * var(--default-font-size)) /
     calc(3 * var(--default-font-size)) var(--default-font-family);

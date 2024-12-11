@@ -13,5 +13,5 @@
   box-sizing: border-box;
   cursor: pointer;
   width: 100%;
-  font-family: Arial;
+  font-family: var(--default-font-family);
 }
