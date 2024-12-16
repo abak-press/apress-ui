@@ -2,7 +2,7 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Arial';
+  font-family: var(--default-font-family);
   color: var(--white);
   box-sizing: border-box;
 }
