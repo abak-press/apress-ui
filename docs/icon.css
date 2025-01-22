@@ -272,6 +272,11 @@
   background-color: var(--black-l50);
 }
 
+.aui-icon_arrow-back_color_white::after,
+.aui-icon_arrow-back_color_white::before {
+  background-color: var(--white);
+}
+
 .aui-icon_arrow-outline::after,
 .aui-icon_arrow-outline::before {
   background-image: url(dabb998fe532176a6c1142360b11d44b.svg);
