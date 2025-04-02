@@ -262,6 +262,12 @@
   }
 }
 
+.aui-button_disabled {
+  opacity: 0.3;
+  cursor: auto;
+  pointer-events: none;
+}
+
 .aui-button_small {
   height: 40px;
   padding: 0 var(--indent-sm);

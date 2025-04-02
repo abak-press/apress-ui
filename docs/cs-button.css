@@ -161,3 +161,11 @@
   height: 36px;
 }
 
+.aui-cs-button_disabled,
+.aui-cs-button_disabled:visited,
+.aui-cs-button_disabled:link {
+  opacity: 0.3;
+  cursor: auto;
+  pointer-events: none;
+}
+
