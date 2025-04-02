@@ -1,0 +1,5 @@
+.aui-button_disabled {
+  opacity: 0.3;
+  cursor: auto;
+  pointer-events: none;
+}

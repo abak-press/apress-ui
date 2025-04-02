@@ -37,5 +37,8 @@
   "description": "apress ui",
   "publishConfig": {
     "registry": "https://registry.railsc.ru"
+  },
+  "engines": {
+    "node": "14.x"
   }
 }
