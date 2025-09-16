@@ -10,10 +10,6 @@
   position: relative;
 }
 
-.aui-breadcrumbs__item_hidden {
-  display: none;
-}
-
 .aui-breadcrumbs__item + .aui-breadcrumbs__item {
   padding-left: 15px;
   margin-left: 6px;
@@ -42,6 +38,10 @@
 
   .aui-breadcrumbs__item::before,
   .aui-breadcrumbs__item:not(.aui-breadcrumbs__item_always-show) {
+    display: none;
+  }
+
+  .aui-breadcrumbs__item_hidden {
     display: none;
   }
 
