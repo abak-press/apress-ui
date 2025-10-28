@@ -25,7 +25,10 @@ app.modules.initPhoneMask = (function (self) {
       pattern = 'defaultPattern';
     } else {
       firstDigitMatch = currentValue.match(/\d/);
-      if (firstDigitMatch && firstDigitMatch[0] === '8') {
+
+      if (_options.pattern) {
+        pattern = _options.pattern;
+      } else if (firstDigitMatch && firstDigitMatch[0] === '8') {
         pattern = 'nationalPattern';
       } else {
         pattern = 'simplePattern';
