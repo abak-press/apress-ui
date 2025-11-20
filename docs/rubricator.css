@@ -123,12 +123,24 @@
   transform: rotate(-45deg) translate(45%);
 }
 
+.aui-rubricator__toggler_back {
+  height: calc(100% - var(--indent-s));
+}
+
+.aui-rubricator__toggler_back::after {
+  transform: rotate(135deg);
+}
+
 .aui-rubricator__item-link {
   display: block;
   margin-left: var(--indent-m);
   color: var(--dark-dark);
   text-decoration: none;
   cursor: pointer;
+}
+
+.aui-rubricator__item-link_parent-rubric {
+  margin-bottom: var(--indent-s);
 }
 
 .aui-rubricator__item-amount {
