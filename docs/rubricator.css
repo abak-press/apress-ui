@@ -129,6 +129,7 @@
 
 .aui-rubricator__toggler_back::after {
   transform: rotate(135deg);
+  margin-top: -3px;
 }
 
 .aui-rubricator__item-link {
