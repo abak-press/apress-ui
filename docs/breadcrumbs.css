@@ -89,6 +89,7 @@
   text-decoration: none;
   line-height: 19px;
   color: var(--dark-dark);
+  cursor: pointer;
 }
 
 .aui-breadcrumbs_with-rubric__rubric:hover {
