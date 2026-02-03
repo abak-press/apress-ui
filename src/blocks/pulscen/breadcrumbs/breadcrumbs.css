@@ -19,11 +19,14 @@
   left: 0;
   position: absolute;
 }
+
 .aui-breadcrumbs__item-link,
 .aui-breadcrumbs__item-link:visited {
   text-decoration: none;
   color: var(--dark-dark);
+  cursor: pointer;
 }
+
 .aui-breadcrumbs__item-link:hover {
   color: var(--blue);
 }
