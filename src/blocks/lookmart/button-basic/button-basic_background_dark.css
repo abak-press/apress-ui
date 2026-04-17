@@ -1,0 +1,10 @@
+.aui-button-basic_background_dark,
+.aui-button-basic_background_dark:link,
+.aui-button-basic_background_dark:visited {
+  color: var(--d2021-white);
+}
+
+.aui-button-basic_background_dark {
+  border: none;
+  background-color: #2d2d2d;
+}

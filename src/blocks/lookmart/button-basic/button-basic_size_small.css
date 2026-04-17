@@ -1,0 +1,5 @@
+.aui-button-basic_size_small {
+  padding: 5px 15px;
+  height: 30px;
+  font-size: var(--small-font-size);
+}
