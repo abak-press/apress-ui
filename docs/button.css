@@ -739,3 +739,9 @@
   border-radius: 6px;
 }
 
+.aui-button_square-huge {
+  width: 60px;
+  height: 60px;
+  border-radius: 3px;
+}
+
