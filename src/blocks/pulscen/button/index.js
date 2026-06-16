@@ -28,3 +28,4 @@ import './button_only-icon.css';
 
 import './button_square.css';
 import './button_square-big.css';
+import './button_square-huge.css';
