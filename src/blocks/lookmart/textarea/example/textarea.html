@@ -1,0 +1,69 @@
+<h2>Текстовое поле</h2>
+<ul>
+  <li>автоматически растягивается по высоте по мере набора текста (js)</li>
+  <li>плавающий плейсхолдер</li>
+  <li>счетчик символов (js)</li>
+</ul>
+
+<div style="width: 400px" class="aui-textarea js-aui-textarea">
+  <textarea
+    id="somebody-id"
+    class="aui-textarea__field js-aui-textarea-field js-autogrow-textarea"
+    maxlength="400"
+    name="somebody-name"
+    placeholder=" "
+    rows="1"
+  ></textarea>
+  <label class="aui-textarea__label" for="somebody-id">Введите текст</label>
+  <div class="aui-textarea__counter js-aui-textarea-counter">400</div>
+</div>
+
+<h3>Подключение</h3>
+
+<p>Стили и JavaScript компонента подключаются отдельно:</p>
+
+<pre><code>import '@apress/apress-ui/dist/lookmart/textarea.css';
+import '@apress/apress-ui/dist/lookmart/textarea.js';</code></pre>
+
+<h4>Изменение высоты при наборе текста</h4>
+
+<p>
+  Для автоматического изменения высоты textarea нужен класс
+  <b>js-autogrow-textarea</b>. Поле будет растягиваться при вводе, в том числе
+  если оно было добавлено в DOM динамически.
+</p>
+
+<p>
+  Если динамически добавленное поле уже содержит текст, после вставки нужно
+  вызвать событие инициализации на самом textarea или на его контейнере:
+</p>
+
+<pre><code>container.dispatchEvent(
+  new Event('init:textarea', { bubbles: true })
+);</code></pre>
+
+<p>
+  Если жизненным циклом поля управляет сама форма, функции изменения высоты
+  можно импортировать без автоматической установки обработчиков:
+</p>
+
+<pre><code>import {
+  handleTextareaResize,
+  initTextareas,
+  resizeTextarea
+} from '@apress/apress-ui/src/blocks/lookmart/textarea/textarea-resize';</code></pre>
+
+<h4>Плавающий плейсхолдер</h4>
+
+<p>
+  Для работы плавающей подписи в <b>placeholder</b> обязательно должен быть
+  задан пробел (<code>placeholder=" "</code>).
+</p>
+
+<h4>Счетчик символов</h4>
+
+<p>
+  Если у поля задан <code>maxlength</code> и внутри блока есть элемент
+  <b>js-aui-textarea-counter</b>, счетчик показывает, сколько символов осталось.
+  Он обновляется при вводе и при событии <code>init:textarea</code>.
+</p>
