@@ -9,6 +9,7 @@
     url('RobotoSlab-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -18,9 +19,9 @@
     url('OpenSans-Regular.woff2') format('woff2'),
     url('OpenSans-Regular.woff') format('woff'),
     url('OpenSans-Regular.ttf') format('truetype');
-
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -32,6 +33,7 @@
     url('OpenSans-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
