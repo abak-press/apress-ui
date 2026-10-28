@@ -47,6 +47,7 @@
 .aui-textarea__field:focus + .aui-textarea__label,
 .aui-textarea__field:not(:placeholder-shown) + .aui-textarea__label {
   top: 3px;
+  padding-right: 50px;
   font-size: var(--small-font-size);
   line-height: 14px;
   transform: none;
